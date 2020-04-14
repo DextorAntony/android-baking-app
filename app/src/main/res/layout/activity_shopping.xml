@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_background">
+
+        <!-- Display the shopping list -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_shopping"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- Empty view -->
+        <TextView
+            android:id="@+id/tv_empty_shopping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/muli_regular"
+            android:padding="@dimen/padding_shopping_empty"
+            android:text="@string/empty_view_shopping"
+            android:textAlignment="center"
+            android:textColor="@color/purple"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+    </FrameLayout>
+</layout>
